@@ -77,19 +77,15 @@ fig, axs = plt.subplots(2, 2, figsize=(10, 10))  # Mengatur ukuran gambar
 
 axs[0, 0].imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 axs[0, 0].set_title('Gambar Asli')
-axs[0, 0].axis('off')
 
 axs[0, 1].imshow(cv2.cvtColor(result_orange, cv2.COLOR_BGR2RGB))
 axs[0, 1].set_title('Jeruk')
-axs[0, 1].axis('off')
 
 axs[1, 0].imshow(cv2.cvtColor(result_red, cv2.COLOR_BGR2RGB))
 axs[1, 0].set_title('Apel')
-axs[1, 0].axis('off')
 
 axs[1, 1].imshow(cv2.cvtColor(result_green, cv2.COLOR_BGR2RGB))
 axs[1, 1].set_title('Mangga')
-axs[1, 1].axis('off')
 
 plt.tight_layout()
 plt.savefig('hasil_gambar.png')  # Menyimpan hasil gambar
@@ -196,7 +192,6 @@ Memisahkan dan menampilkan setiap buah yang telah dihapus latar belakangnya
 ```bash
 axs[0, 0].imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 axs[0, 0].set_title('Gambar Asli')
-axs[0, 0].axis('off')
 ```
 
 Memberikan tampilan asli, menampilkan title, dan mematikan axis pada data.
@@ -204,7 +199,6 @@ Memberikan tampilan asli, menampilkan title, dan mematikan axis pada data.
 ```bash
 axs[0, 0].imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 axs[0, 0].set_title('Gambar Asli')
-axs[0, 0].axis('off')
 ```
 
 Memberikan tampilan asli, menampilkan title, dan mematikan axis pada data.
@@ -212,7 +206,6 @@ Memberikan tampilan asli, menampilkan title, dan mematikan axis pada data.
 ```bash
 axs[0, 1].imshow(cv2.cvtColor(result_orange, cv2.COLOR_BGR2RGB))
 axs[0, 1].set_title('Jeruk')
-axs[0, 1].axis('off')
 ```
 
 Memberikan Buah dengan warna orange, menampilkan title, dan mematikan axis pada data.
@@ -221,7 +214,6 @@ Memberikan Buah dengan warna orange, menampilkan title, dan mematikan axis pada 
 ```bash
 axs[1, 0].imshow(cv2.cvtColor(result_red, cv2.COLOR_BGR2RGB))
 axs[1, 0].set_title('Apel')
-axs[1, 0].axis('off')
 ```
 
 Memberikan Buah dengan warna Apel, menampilkan title, dan mematikan axis pada data.
@@ -229,7 +221,6 @@ Memberikan Buah dengan warna Apel, menampilkan title, dan mematikan axis pada da
 ```bash
 axs[1, 1].imshow(cv2.cvtColor(result_green, cv2.COLOR_BGR2RGB))
 axs[1, 1].set_title('Mangga')
-axs[1, 1].axis('off')
 ```
 
 Memberikan Buah dengan warna mangga, menampilkan title, dan mematikan axis pada data.
