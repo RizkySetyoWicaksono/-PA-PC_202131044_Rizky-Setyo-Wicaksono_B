@@ -122,7 +122,7 @@ import matplotlib.pyplot as plt
 
 
 ```bash
-  img = cv2.imread('titit.jpg')
+  img = cv2.imread('buah.jpg')
 ```
 
 Kodingan di atas digunakan untuk memuat gambar dengan tiga buah dan latar belakang
